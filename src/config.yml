@@ -1,0 +1,27 @@
+# StaffChat by NerdyTechy
+#
+# This project is licensed under a common MIT License
+# The source code is available at https://github.com/NerdyTechy/StaffChat
+#
+# The default config.yml file is available at:
+
+# To disable certain modules, please use the commands.yml file
+
+# Change the format of the chat
+
+
+chat-format:
+  staff-chat: '&8[&fStaffChat&8] &c%player%: &f%message%'
+  build-chat: '&8[&fBuildChat&8] &c%player%: &f%message%'
+  admin-chat: '&8[&fAdminChat&8] &c%player%: &f%message%'
+  dev-chat: '&8[&fDevChat&8] &c%player%: &f%message%'
+
+messages:
+  no-permission: '&cYou do not have permission to execute this command.'
+  channel-public: '&7You are now speaking in public chat.'
+  channel-staff: '&7You are now speaking in staff chat.'
+  channel-build: '&7You are now speaking in build chat.'
+  channel-admin: '&7You are now speaking in admin chat.'
+  channel-dev: '&7You are now speaking in dev chat.'
+
+update-notification: true

@@ -1,0 +1,43 @@
+name: StaffChat
+version: 1.1
+author: NerdyTechy
+description: A simple and lightweight staff chat plugin for Spigot servers.
+main: me.nerdytechy.staffchat.StaffChat
+
+commands:
+  staffchat:
+    description: Allows access to the staff chat channel.
+    aliases: [sc, schat]
+  adminchat:
+    description: Allows access to the admin chat channel.
+    aliases: [ac, achat]
+  buildchat:
+    description: Allows access to the build chat channel.
+    aliases: [bc, bchat]
+  devchat:
+    description: Allows access to the developer chat channel.
+    aliases: [dc, dchat, developerchat]
+  staffchatreload:
+    description: Reloads the plugin configuration file.
+    aliases: [scr]
+
+permissions:
+  staffchat.*:
+    default: op
+    description: Grants every StaffChat permission.
+    children:
+      staffchat.staffchat:
+        default: op
+        description: Grants access to the Staff chat channel.
+      staffchat.adminchat:
+        default: op
+        description: Grants access to the Admin chat channel.
+      staffchat.buildchat:
+        default: op
+        description: Grants access to the Build chat channel.
+      staffchat.devchat:
+        default: op
+        description: Grants access to the Developer chat channel.
+      staffchat.reload:
+        default: op
+        description: Allows a user to reload the plugin configuration file.
